@@ -1,0 +1,43 @@
+<app-page-not-found [visible]="!food" notFoundMessage="Product Not Found" resetLinkText="Go to Home Page"></app-page-not-found>
+
+<div *ngIf="food" class="container">
+    <img [src]="food.imageUrl" [alt]="food.name">
+    
+
+<div class="details">
+    <div class="header">
+      <span class="name">
+        {{food.name}}
+      </span>
+      <mat-icon class="favorite {{food.favorite? '': 'not'}}">favorite</mat-icon>
+      
+    </div>
+    
+    <div class="origins">
+      <span>{{food.origins}}</span>
+    </div>
+
+    <div class="tags">
+      <mat-chip-list *ngFor="let tag of food.tags" routerLink="/tag/{{tag}}">
+          <mat-chip>{{tag}}</mat-chip>
+        
+      </mat-chip-list>
+    </div>
+
+    <div class="cook-time">
+      <span>
+        Time to cook about <strong>{{food.cookTime}}</strong> minutes
+      </span>
+    </div>
+
+    <div class="price">
+      <span>
+        {{food.price | currency: 'INR'}}
+      </span>
+    </div>
+
+    <button mat-flat-button color="warn" (click)="addToCart()">Add To Cart</button>
+
+  </div>
+
+</div>

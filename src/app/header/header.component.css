@@ -1,0 +1,24 @@
+
+span{
+    cursor: pointer;
+}
+
+
+.spacer{
+    flex: 1 1 auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover, a:active {
+    color: rgb(214, 250, 116);
+}
+
+.navigation-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}

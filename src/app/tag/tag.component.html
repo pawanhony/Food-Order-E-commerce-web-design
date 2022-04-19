@@ -1,0 +1,17 @@
+<div class="tags">
+    <mat-chip-list *ngIf="tags">
+        <mat-chip *ngFor="let tag of tags" routerLink="/tag/{{tag.name}}" color="accent" selected>
+            {{tag.name}}({{tag.count}})
+        </mat-chip>
+    </mat-chip-list>
+</div>
+
+<!--- cart page tag   -->
+
+<div class="tags">
+    <mat-chip-list *ngIf="foodpagetags">
+        <mat-chip *ngFor="let tagname of foodpagetags" routerLink="/tag/{{tagname}}" color="accent" selected>
+            {{tagname}}
+        </mat-chip>
+    </mat-chip-list>
+</div>

@@ -1,0 +1,75 @@
+.homecover{
+    width: 100%;
+    max-height: 400px;
+    filter: brightness(0.5);
+}
+
+.box{
+    margin-top: 40px;
+}
+
+.content{
+    margin-top: -210px;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    transition: transform .5s ease;
+    margin-top: 20px;
+}
+
+ul li img{
+    width: 300px;
+    height: 200px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+ul li {
+    
+    width: 300px;
+    margin: 15px;
+    flex-direction: column;
+    
+}
+
+ul li:hover{
+    transform: scale(1.1);
+}
+
+.foodnaam{
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+}
+
+
+.name{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.fav{
+    flex: 1 1 auto;
+}
+.list{
+    display: flex;
+    height: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    justify-content: space-between;
+    line-height: 20px;
+}
+
+
+
+.spacer{
+    float: right;
+    
+}

@@ -1,0 +1,21 @@
+
+<mat-toolbar color="primary" class=mat-elevation-z6 >
+    <span routerLink="/"> {{title}} </span>
+
+    <div class="spacer"></div>
+    
+    <div fxHide.xs>
+        
+            <a mat-button routerLinkActive="active" routerLink="login">Login</a>
+            
+            <a mat-button routerLinkActive="active" routerLink="/cart-page">
+                <mat-icon>shopping_cart</mat-icon>
+                
+                Cart 
+                <span class="badge" matBadge="0" matBadgeColor="warn" >{{cartQuantity}}</span>
+            </a>
+            
+    </div>
+
+
+</mat-toolbar>
